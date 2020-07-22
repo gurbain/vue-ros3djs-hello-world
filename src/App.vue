@@ -28,7 +28,7 @@ export default {
   }),
   mounted () {
     this.ros = new ROSLIB.Ros({
-      url: 'wss://api.gurbain.be/exoli1'
+      url: 'ws://localhost:9090/'
     });
 
     this.ros.on('connection', () => {
